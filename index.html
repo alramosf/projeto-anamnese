@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Anamnese</title>
+    <style>
+        table{
+            
+            border-collapse: collapse
+        }
+        tr{
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        td{
+            
+            border: 1px solid black;
+            padding-right: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ANAMNESE</h1>
+        <p>Estética Corporal</p>
+        <form action="">
+
+            <fieldset>
+                <legend><strong>Dados</strong></legend>
+                <p><label for=""><label for="cNome">Nome:</label></label> <input type="text" name="tNome" id="cNome" size="13" maxlength="64" placeholder="Seu nome completo"></p>
+
+                <p><label for="cNasc">Nasc:</label> <input type="date" name="tNasc" id="cNasc"></p>
+
+                <p><label for="cOcup">Ocupação: <input type="text" name="tOcup" id="cOcup" size="13" maxlength="48" placeholder="Esteticista"></label></p>
+
+                <p><label for="cTel">Telefone: <input type="tel" name="tTel" id="cTel" size="11" maxlength="11" placeholder="31940028922"></label> é Whatsapp? <input type="checkbox" name="" id="" required>Sim</p>
+
+                <p><label for="">Endereço: <input type="text" name="tEnd" id="cEnd" size="25" maxlength="64" placeholder="Rua das Castanheiras 10 - Ap 101"></label></p>
+                <p><label for="cRG">RG: <input type="number" name="tRG" id="cRG" size="8" maxlength="8" placeholder="12345678"></label></p>
+<label for="">                </label>
+                <p><label for="cCPF">CPF: <input type="number" name="tCPF" id="cCPF" size="11" maxlength="11" placeholder="12345678910"></label></p>
+            </fieldset>
+        </form>
+    </header>
+    <main>
+        <form action="">
+            <fieldset> <!--Adicionar um radios a cada obs-->
+                <Legend><strong>Avaliação</strong></Legend>
+                <p>É fumante? 
+                    <label for="fum1">Não<input type="radio" name="fumante" id="fum1"></label>
+                    <label for="fum2">Sim<input type="radio" name="fumante" id="fum2"></label></p>
+                <p>Distúrbio circulatório? 
+                    <label for="circ1">Não<input type="radio" name="circ" id="circ1"></label>
+                    <label for="circ2">Sim<input type="radio" name="circ" id="circ2"></p>
+                <p>É epilética? 
+                    <label for="epi1">Não<input type="radio" name="epiletica" id="epi1"></label>
+                    <label for="epi2">Sim<input type="radio" name="epiletica" id="epi2"></label></p>
+                <p>Ciclo menstrual regular? 
+                    <label for="men1">Não<input type="radio" name="menst" id="men1"></label> 
+                    <label for="men2">Sim<input type="radio" name="menst" id="men2"></label></p>
+                <p>Funcionamento Intestinal Regular? 
+                    <label for="reg1">Não<input type="radio" name="reg" id="reg1"></label> 
+                    <label for="reg2">Sim<input type="radio" name="reg" id="reg2"></label></p>
+                <p>Diabetes?  
+                    <label for="diab1">Não<input type="radio" name="diab" id="diab1"></label> 
+                    <label for="diab2">Sim<input type="radio" name="diab" id="diab2"></label>
+                    <input type="text" name="" id="" placeholder="Tipo:"> <label for="">Controlada
+                    <label for="contr1">Sim<input type="radio" name="contr" id="contr1"></label>
+                    </label>
+                    <label for="contr2">Não<input type="radio" name="contr" id="contr2"></label>
+                </p>
+                <p>Alterações Cardíacas? 
+                    <label for="card1">Não<input type="radio" name="card" id="card1"></label> 
+                    <label for="card2">Sim<input type="radio" name="card" id="card2"></label></p>
+                <p>Distúrbio Hormonal? 
+                    <label for="horm1">Não<input type="radio" name="horm" id="horm1"></label> 
+                    <label for="horm2">Sim<input type="radio" name="horm" id="horm2"></label></p>
+                <p>Tem Hipo/Hipertensão arterial? 
+                    <label for="hip1">Não<input type="radio" name="hip" id="hip1"></label> 
+                    <label for="hip2">Sim<input type="radio" name="hip" id="hip2"></label></p>
+                <p>Distúrbio Renal? 
+                    <label for="ren1">Não<input type="radio" name="ren" id="ren1"> </label>
+                    <label for="ren2">Sim<input type="radio" name="ren" id="ren2"></label></p>
+                <p>Varizes ou lesões? 
+                    <label for="les1">Não<input type="radio" name="les" id="les1"></label> 
+                    <label for="les2">Sim<input type="radio" name="les" id="les2"></label></p>
+                <p>Gestante?  
+                    <label for="gest1">Não<input type="radio" name="gest" id="gest1"></label> 
+                    <label for="gest2">Sim<input type="radio" name="gest" id="gest2"></label> <input type="number" name="semana" id="sem" min="0" max="50" placeholder="0"> <label for="sem">Semanas</label>
+                   
+                </p><!--Add pergunta de semanas-->
+                <p>Está em tratamento médico? 
+                    <label for="trat1">Não<input type="radio" name="trat" id="trat1"></label> 
+                    <label for="trat2">Sim<input type="radio" name="trat" id="trat2"></label><br>
+                    <input type="text" name="especifique" id="especifique" size="34" maxlength="34" placeholder="Especifique">
+                </p><!-- Add pergunta do tipo e radios se controlado ou não--> 
+                <p>Problemas de pele? 
+                    <label for="pele1">Não<label for=""><input type="radio" name="pele" id="pele1"></label></label>  
+                    <label for="pele2">Sim<label for=""><input type="radio" name="pele" id="pele2"></label></label><br>
+                    <input type="text" name="especifique" id="especifique" size="34" maxlength="34" placeholder="Especifique">
+                
+                </p>
+                <p>Prótese corporal/facial? 
+                    <label for="corp1">Não<label for=""><input type="radio" name="corp" id="corp1"></label></label> 
+                    <label for="corp2">Sim<label for=""><input type="radio" name="corp" id="corp2"></label></label><br>
+                    <input type="text" name="especifique" id="especifique" size="34" maxlength="34" placeholder="Especifique">
+                
+                </p>
+                <p>Alguma alergia? 
+                    <label for="aler1">Não<label for=""><input type="radio" name="aler" id="aler1"></label></label>
+                    <label for="aler2">Sim<label for=""><input type="radio" name="aler" id="aler2"></label></label><br>
+                    <input type="text" name="especifique" id="especifique" size="34" maxlength="34" placeholder="Especifique">
+                
+                </p>
+                <p>Tumor ou lesão pré-cancerosa? 
+                    <label for="cancer1">Não<label for=""><input type="radio" name="cancer" id="cancer1"></label></label> 
+                    <label for="cancer2">Sim<label for=""><input type="radio" name="cancer" id="cancer2"></label></label><br>
+                    <input type="text" name="especifique" id="especifique" size="34" maxlength="34" placeholder="Especifique">
+                
+                </p>
+                <p>Problemas ortopédicos? 
+                    <label for="orto1">Não<label for=""><input type="radio" name="orto" id="orto1"></label> </label>
+                    <label for="orto2">Sim<label for=""><input type="radio" name="orto" id="orto2"></label></label><br>
+                    <input type="text" name="especifique" id="especifique" size="34" maxlength="34" placeholder="Especifique">
+                
+                </p>
+                <p>Está utilizando ácidos? 
+                    <label for="acid1">Não<label for=""><input type="radio" name="acid" id="acid1"></label></label> 
+                    <label for="acid2">Sim<label for=""><input type="radio" name="acid" id="acid2"></label></label><br>
+                    <input type="text" name="especifique" id="especifique" size="34" maxlength="34" placeholder="Especifique">
+                
+                </p>
+                <p>Algum problema que seja necesário informar antes do procedimento? 
+                    <label for="probl1">Não<label for=""><input type="radio" name="probl" id="probl1"></label></label> 
+                    <label for="probl2">Sim<label for=""><input type="radio" name="probl" id="probl2"></label></label><br>
+                    <input type="text" name="especifique" id="especifique" size="34" maxlength="34" placeholder="Especifique">
+                
+                </p>
+            
+            ----
+                As declarações acima são verdadeiras, não cabendo ao profissional a responsabilidade por informações omitidas nesta Avaliação
+                <label for="dec1">Não<label for=""><input type="radio" name="dec" id="dec1"></label></label> 
+                    <label for="dec2">Sim<label for=""><input type="radio" name="dec" id="dec2"></label></label>
+                <p><label for="cData">Em <input type="date" name="data" id="cData"></label> <label for="assing">Ass: <input type="text" name="assinatura" id="assing"></label></p>
+        </form>
+        </fieldset>
+    </main>
+    <footer>
+        <form action="">
+            <fieldset>
+                <p>Altura:</p>
+                <p>Peso Inicial:</p>
+                <p>Peso Final:</p>
+                <p>Observações:</p>
+                <br>
+                
+                <table>
+                    <tr>
+                        <td>Busto</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <td>Braço Esq</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <td>Braço Dir</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <td>Abdomen</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <td>Cintura</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <td>Quadril</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <td>Culote</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <td>Coxa Esq</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <td>Coxa Dir</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <td>Panturrilha Esq</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <td>Panturrilha Dir</td>
+                        <td></td>
+                        <td></td>
+                    
+                    </tr>
+                </tr>
+            
+                   
+                </table>
+
+
+                <input type="date">Data Inicio</input>
+                Data Término
+            </fieldset>
+        </form>
+        <p>Ficha de Anamnese feita por Alexandre Ramos</p>
+    </footer>
+</body>
+</html>
