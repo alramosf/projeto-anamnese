@@ -9,13 +9,13 @@
 </head>
 <body>
     <header>
-        <h1>ANAMNESE</h1>
-        <p>Estética Corporal</p>
-        <form action="">
+        <h1 class="titulo">ANAMNESE</h1>
+        <p class="subtitulo">Estética Corporal</p>
+        <form action="" class="dadoscad">
 
             <fieldset>
                 <legend><strong>Dados</strong></legend>
-                <p><label for=""><label for="cNome">Nome:</label></label> <input type="text" name="tNome" id="cNome" size="13" maxlength="64" placeholder="Seu nome completo"></p>
+                <p><label for=""><label for="cNome">Nome:</label></label> <input type="text" name="tNome" id="cNome" size="16" maxlength="64" placeholder="Seu nome completo"></p>
 
                 <p><label for="cNasc">Nasc:</label> <input type="date" name="tNasc" id="cNasc"></p>
 
@@ -23,9 +23,8 @@
 
                 <p><label for="cTel">Telefone: <input type="tel" name="tTel" id="cTel" size="11" maxlength="11" placeholder="31940028922"></label> é Whatsapp? <input type="checkbox" name="" id="" required>Sim</p>
 
-                <p><label for="">Endereço: <input type="text" name="tEnd" id="cEnd" size="25" maxlength="64" placeholder="Rua das Castanheiras 10 - Ap 101"></label></p>
+                <p><label for="cEnd">Endereço: <input type="text" name="tEnd" id="cEnd" size="25" maxlength="64" placeholder="Rua das Castanheiras 10 - Ap 101"></label></p>
                 <p><label for="cRG">RG: <input type="number" name="tRG" id="cRG" size="8" maxlength="8" placeholder="12345678"></label></p>
-<label for="">                </label>
                 <p><label for="cCPF">CPF: <input type="number" name="tCPF" id="cCPF" size="11" maxlength="11" placeholder="12345678910"></label></p>
             </fieldset>
         </form>
@@ -126,10 +125,9 @@
                 
                 </p>
             
-            ----
                 As declarações acima são verdadeiras, não cabendo ao profissional a responsabilidade por informações omitidas nesta Avaliação
                 <label for="dec1">Não<label for=""><input type="radio" name="dec" id="dec1"></label></label> 
-                    <label for="dec2">Sim<label for=""><input type="radio" name="dec" id="dec2"></label></label>
+                <label for="dec2">Sim<label for=""><input type="radio" name="dec" id="dec2"></label></label>
                 <p><label for="cData">Em <input type="date" name="data" id="cData"></label> <label for="assing">Ass: <input type="text" name="assinatura" id="assing" placeholder="Sua assinatura aqui."></label></p>
         </form>
         </fieldset>
@@ -137,37 +135,31 @@
     <footer>
         <form action="">
             <fieldset>
-                <p>Altura:</p>
-                <p>Peso Inicial:</p>
-                <p>Peso Final:</p>
-                <p>Observações:</p>
+                <p><label for="altura">Altura: <input type="text" name="alt" id="altura" size="4" max="4"></label></p>
+                <p><label for="pesoini">Peso Inicial: <input type="text" name="pesoini" id="pesoini" size="4" maxlength="4"></label></p>
+                <p><label for="pesofim">Peso Final: <input type="text" name="pesofim" id="pesofim" size="4" maxlength="4"></label></p>
+                <p>Observações: <input type="text" name="" id=""></p>
                 <br>
                 
-                <table>
-                    <tr>
-                        Busto <br>
-                        Braço Esq <br>
-                        Braço Dir<br>
-                        Abdomen<br>
-                        Cintura<br>
-                        Quadril<br>
-                        Culote<br>
-                        <label for="">Coxa Esq<input type="text"></input> <input type="text" name="" id=""></label><br>
-                        <label for="">Coxa Dir  <input type="text" name="" id=""> </label> <br>       
-                        Panturrilha Esq 
-                        Panturrilha Dir                 
+              
+                <label for="busto">Busto <input type="text" name="busto" id="busto" size="3" maxlength="5" ><input type="text" name="" id="" size="3" maxlength="5" ></label><br>
+                <label for="bracoesq">Braço Esq <input type="text" name="bracoesq" id="bracoesq" size="3" maxlength="5" ><input type="text" name="" id="" size="3" maxlength="5" ><br></label>
+                <label for="bracodir">Braço Dir<input type="text" name="bracodir" id="bracodir" size="3" maxlength="5" ><input type="text" name="" id="" size="3" maxlength="5" ><br></label>
+                <label for="abdomen">Abdomen<input type="text" name="abdomen" id="abdomen" size="3" maxlength="5" ><input type="text" name="" id="" size="3" maxlength="5" ><br></label>
+                <label for="cintura">Cintura<input type="text" name="cintura" id="cintura" size="3" maxlength="5" ><input type="text" name="" id="" size="3" maxlength="5" ><br></label>
+                <label for="quadril">Quadril<input type="text" name="quadril" id="quadril" size="3" maxlength="5" ><input type="text" name="" id="" size="3" maxlength="5" ><br></label>
+                <label for="culote">Culote<input type="text" name="culote" id="culote" size="3" maxlength="5" ><input type="text" name="" id="" size="3" maxlength="5" > <br></label>
+                <label for="coxaesq">Coxa Esq<input type="text" name="coxaesq" id="coxaesq" size="3" maxlength="5"></input> <input type="text" name="" id="" size="3" maxlength="5"></label><br>
+                <label for="coxadir">Coxa Dir  <input type="text" name="coxadir" id="coxadir" size="3" maxlength="5" > <input type="text" name="" id="" size="3" maxlength="5" ></label>  <br>       
+                <label for="pantesq">Panturrilha Esq <input type="text" name="pantesq" id="pantesq" size="3" maxlength="5" ><input type="text" name="" id="" size="3" maxlength="5" ><br></label>
+                <label for="pantdir">Panturrilha Dir<input type="text" name="pantdir" id="pantdir" size="3" maxlength="5" ><input type="text" name="" id="" size="3" maxlength="5" ></label>             
                    
-                
-            
-                   
-                </table>
-
 
                 <label for="date1">Data Inicio<input type="date" id="date1"></input></label>
                 <label for="date2">Data Termino<input type="date" id="date2"></input></label>
             </fieldset>
         </form>
-        <p>Ficha de Anamnese feita por Alexandre Ramos</p>
+        <p>Ficha de Anamnese feita por <a href="https://github.com/alramosf" target="_blank">Alexandre Ramos</a> <a href="https://www.instagram.com/alramosf/" target="_blank"><img src="imagens/instagram-iconpq.png" alt="logo instagram"></a></p>
     </footer>
 </body>
 </html>
