@@ -38,7 +38,7 @@ fieldset{
     font-family: var(--fonte-destaque);
 }
 fieldset p {
-    padding: 10px 10px 8px 10px;
+    padding-bottom: 8px;
     margin: 10px;
     font-size: 16px;
     font-family: var(--fonte-poppins);
