@@ -8,6 +8,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 *{
     margin: 0px;
@@ -26,29 +27,42 @@
     --fonte-destaque: 'Indie Flower', 'cursive';
     --fonte-escrita: 'Passion One', 'cursive';
     --fonte-desehada: 'Hachi Maru Pop', 'cursive';
+    --fonte-subtitulo:'Pacifico', 'cursive';
 }
 
 header{
-    margin-bottom: 30px;
-    font-family:var(--fonte-destaque);
-    font-weight:normal;
+    font-weight:thi;
     text-align:center;
     font-size:2em;
+    background-color: #F2B9AC;
+    margin: -10px;
+    /* box-shadow: 10px 10px 10px 10px; */
    
 }
 
+header > h1{
+    font-family: var(--fonte-escrita);
+    font-weight:normal;
+}
 
+header >p{
+    font-family: var(--fonte-subtitulo);
+    padding-bottom:10px ;
+    
+}
 fieldset{
-    margin: 10px;
+    margin: 0px 10px 10px 10px;
     padding: 10px;
     background-color:var(--cor2);
-    border-radius: 0px 20px 0px 20px;
+    border-radius: 8px;
     color: black;
     /* font-weight: thin; */
     /* font-family: var(--fonte-destaque); */
 }
 
-
+fieldset legend{
+    font-family: var(--fonte-destaque);
+}
 fieldset p {
 
     margin: 10px;
@@ -64,7 +78,6 @@ body{
 }
 
 
-
 .subtitulo{
     font-family: var(--fonte-poppins);
     font-size: 2em;
@@ -76,20 +89,24 @@ main{
     min-width: 300px;
     max-width: 1000px ;
     margin: auto;
+
 }
 
 
-
 footer{
-    min-width: 300px;
-    max-width: 1000px ;
+
     margin: auto;
 }
 
 footer p{
+    background-color: #F2B9AC;
     text-align: center;
 }
 
 footer p > a{
+    text-decoration: none;
+}
+
+a{
     text-decoration: none;
 }
