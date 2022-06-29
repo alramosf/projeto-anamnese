@@ -92,6 +92,9 @@ main{
 
 }
 
+.caixabaixa{
+    border-radius:10px;
+}
 
 footer{
 
@@ -101,12 +104,21 @@ footer{
 footer p{
     background-color: #F2B9AC;
     text-align: center;
+    font-size: 0.8em;
 }
 
 footer p > a{
     text-decoration: none;
+
 }
 
 a{
     text-decoration: none;
+    color: black;
+    
+}
+
+a:hover{
+    text-decoration: underline;
+    color: white;
 }
